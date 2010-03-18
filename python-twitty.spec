@@ -3,7 +3,7 @@
 Name:            python-twitty
 Summary:         A twisted client for twitter-like APIs
 Version:         0.1
-Release:         %mkrel 1
+Release:         %mkrel 2
 Epoch:           0
 Source0:         %{checkout}.tar.gz
 URL:             http://github.com/dustin/twitty-twister/
@@ -12,6 +12,10 @@ Group:           Development/Python
 BuildRoot:       %{_tmppath}/%{name}-buildroot
 BuildRequires:   python-devel
 Provides:        twittytwister = %{epoch}:%{version}-%{release}
+
+Requires:        python-twisted-core
+Requires:        python-twisted-web
+Requires:        python-oauth
 
 %description
 Twitter client for Twisted Python
