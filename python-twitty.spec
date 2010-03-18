@@ -10,7 +10,6 @@ URL:             http://github.com/dustin/twitty-twister/
 License:         MIT
 Group:           Development/Python
 BuildRoot:       %{_tmppath}/%{name}-buildroot
-BuildArch:       noarch
 BuildRequires:   python-devel
 Provides:        twittytwister = %{epoch}:%{version}-%{release}
 
