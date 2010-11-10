@@ -3,7 +3,7 @@
 Name:            python-twitty
 Summary:         A twisted client for twitter-like APIs
 Version:         0.1
-Release:         %mkrel 2
+Release:         %mkrel 3
 Epoch:           0
 Source0:         %{checkout}.tar.gz
 URL:             http://github.com/dustin/twitty-twister/
