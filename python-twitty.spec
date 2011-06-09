@@ -3,9 +3,10 @@
 Name:            python-twitty
 Summary:         A twisted client for twitter-like APIs
 Version:         0.1
-Release:         %mkrel 3
+Release:         4
 Epoch:           0
 Source0:         %{checkout}.tar.gz
+Patch0:		 python-twitty-fix-api-url.patch
 URL:             http://github.com/dustin/twitty-twister/
 License:         MIT
 Group:           Development/Python
@@ -37,5 +38,3 @@ Twitter client for Twisted Python
 %defattr(-,root,root)
 %doc example README.markdown
 %{python_sitelib}/*
-
-
