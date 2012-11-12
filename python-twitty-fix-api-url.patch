@@ -1,0 +1,30 @@
+commit 154a3a59f86ea02ea680f430b8614bcdbd674d8e
+Author: Eduardo Habkost <ehabkost@raisama.net>
+Date:   Thu Jun 9 16:29:47 2011 -0300
+
+    use api.twitter.com/1 base URL instead of the deprecater twitter.com URL
+    
+    Signed-off-by: Eduardo Habkost <ehabkost@raisama.net>
+
+diff --git a/twittytwister/twitter.py b/twittytwister/twitter.py
+index 7449bfe..5092356 100644
+--- a/twittytwister/twitter.py
++++ b/twittytwister/twitter.py
+@@ -21,7 +21,7 @@ import txml
+ 
+ SIGNATURE_METHOD = oauth.OAuthSignatureMethod_HMAC_SHA1()
+ 
+-BASE_URL="https://twitter.com"
++BASE_URL="https://api.twitter.com/1"
+ SEARCH_URL="http://search.twitter.com/search.atom"
+ 
+ 
+@@ -282,7 +282,7 @@ class Twitter(object):
+             postdata=self._urlencode(args), headers=headers, timeout=self.timeout)
+ 
+     def __downloadPage(self, path, parser, params=None):
+-        url = self.base_url + path
++        url = self.base_url + path # can't use urljoin because most callers use URLs starting with '/'
+ 
+         headers = self.makeAuthHeader('GET', url, params)
+         if params:
