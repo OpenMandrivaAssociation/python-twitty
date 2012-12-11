@@ -38,3 +38,24 @@ Twitter client for Twisted Python
 %defattr(-,root,root)
 %doc example README.markdown
 %{python_sitelib}/*
+
+
+%changelog
+* Thu Jun 09 2011 Bogdano Arendartchuk <bogdano@mandriva.com> 0:0.1-4
++ Revision: 683791
+- added patch to replace the deprecated twitter API URL
+- make it noarch
+
+* Wed Nov 10 2010 Bogdano Arendartchuk <bogdano@mandriva.com> 0:0.1-3mdv2011.0
++ Revision: 595658
+- rebuild for python-2.7
+
+* Thu Mar 18 2010 Caio Begotti <caio1982@mandriva.org> 0:0.1-2mdv2010.1
++ Revision: 524967
+- fix requires
+
+* Thu Mar 18 2010 Caio Begotti <caio1982@mandriva.org> 0:0.1-1mdv2010.1
++ Revision: 524964
+- it shouldn't be noarch
+- import python-twitty
+
