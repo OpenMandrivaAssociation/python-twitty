@@ -3,7 +3,7 @@
 Name:            python-twitty
 Summary:         A twisted client for twitter-like APIs
 Version:         0.1
-Release:         4
+Release:         5
 Epoch:           0
 Source0:         %{checkout}.tar.gz
 Patch0:		 python-twitty-fix-api-url.patch
