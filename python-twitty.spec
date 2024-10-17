@@ -7,7 +7,7 @@ Release:         5
 Epoch:           0
 Source0:         %{checkout}.tar.gz
 Patch0:		 python-twitty-fix-api-url.patch
-URL:             http://github.com/dustin/twitty-twister/
+URL:             https://github.com/dustin/twitty-twister/
 License:         MIT
 Group:           Development/Python
 BuildRoot:       %{_tmppath}/%{name}-buildroot
